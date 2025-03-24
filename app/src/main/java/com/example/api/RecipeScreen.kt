@@ -32,10 +32,10 @@ fun RecipeScreen(modifier: Modifier=Modifier)
     {
         when
         {
-            viewState.loading->
-            {
-                CircularProgressIndicator(modifier.align(Alignment.Center))
-            }
+//            viewState.loading->
+//            {
+//                CircularProgressIndicator(modifier.align(Alignment.Center))  for some reason it breaks the app
+//            }
             viewState.error!=null->{
                 Text(text = "ERROR OCCURRED");
             }
