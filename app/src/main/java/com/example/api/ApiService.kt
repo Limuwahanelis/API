@@ -10,7 +10,7 @@ private  val retrofit = Retrofit.Builder().baseUrl("www.themealdb.com/api/json/v
                         .build()
 
 // create method adds access to service methods e.g getCategories
-private val recipeService= retrofit.create(ApiService::class.java);
+ val recipeService= retrofit.create(ApiService::class.java);
 interface ApiService {
     @GET("categories.php") // allows http request, in "" is end point
     suspend fun  getCategories():CategoriesResponse // suspend is like async
