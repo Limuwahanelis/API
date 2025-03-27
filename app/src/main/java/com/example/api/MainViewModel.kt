@@ -17,6 +17,7 @@ class MainViewModel: ViewModel() {
 
     private  fun fetchCategories()
     {
+        // for starting coroutines
         viewModelScope.launch {
             try
             {
